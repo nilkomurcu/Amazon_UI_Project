@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="466.163">
+    <testcase classname="Amazon Feature" name="Search books" time="388.87">
+        <system-out><![CDATA[Given User search books.....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Amazon Feature" name="Delete books" time="76.851">
+        <system-out><![CDATA[Given User delete Books List................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
