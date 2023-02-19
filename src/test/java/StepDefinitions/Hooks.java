@@ -22,7 +22,7 @@ public class Hooks {
 
     @Before
     public void setup() {
-        driver.get("https://www.amazon.com.tr");
+        driver.get("https://www.amazon.com.tr/gp/cart/view.html?ref_=nav_cart");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         lp.loginFunction("nilatelier8@gmail.com","Kolonya35");
