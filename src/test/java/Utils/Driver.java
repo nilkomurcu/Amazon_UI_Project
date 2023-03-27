@@ -3,15 +3,9 @@ package Utils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Driver {
-
-    /**
-     *      SINGLETON DRIVER CLASS
-     *
-     *  -We're using singleton driver because we need 1 driver for every class in our project
-     *
-     */
 
 
     private static WebDriver driver;
@@ -20,7 +14,9 @@ public class Driver {
         // if the driver object is equal to null (there is no active driver instance) then we'll create a new driver instance
         if (driver == null) {
             WebDriverManager.chromedriver().setup();
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new ChromeDriver(options);
         }
         return driver;
     }
